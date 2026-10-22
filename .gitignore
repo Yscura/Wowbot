@@ -1,7 +1,7 @@
 .env
 Discordtoken.txt
 .icon_hash
-seen.json
-seen.tmp
+/seen.json
+/seen.tmp
 .venv/
 __pycache__/
