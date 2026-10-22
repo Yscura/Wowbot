@@ -29,6 +29,7 @@ jobs:
         run: python webhook.py
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          WEBHOOK_URL2: ${{ secrets.WEBHOOK_URL2 }}
           STATE_FILE: state/seen.json
 
       - name: Save posted-article state

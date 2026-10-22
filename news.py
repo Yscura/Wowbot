@@ -112,7 +112,7 @@ async def check_and_post(session: aiohttp.ClientSession, send: Callable[[discord
     for _, key, entry, title in to_post:
         try:
             await send(build_embed(entry, title))
-        except discord.HTTPException:
+        except discord.DiscordException:
             log.exception("Failed to post %s", key)
             continue
         seen.append(key)
